@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Monospace;
+    margin: 0;
+  }
+  
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #92bb82;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .main {
+    background-color: white; 
+    padding: 10px; 
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;  
+    background-color: #333;  
+  }
