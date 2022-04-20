@@ -8,15 +8,17 @@
   }
   
   .header {
-    padding: 60px;
+    padding: 50px;
     text-align: center;
     background: #92bb82;
     color: white;
+    font-size: x-large;
   }
   
   .navbar {
     display: flex;
     background-color: #333;
+    font-size: large;
   }
   
   .navbar a {
@@ -34,6 +36,7 @@
   .main {
     background-color: white; 
     padding: 10px; 
+    font-size: large;
   }
   
   .footer {
