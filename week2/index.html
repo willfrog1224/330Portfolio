@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Week1 Notes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>WDD 330 Portfolio</h1>  
+</div>
+
+<div class="navbar">
+    <a href="../index.html">Home</a>
+</div>
+<script src='main.js'></script>
+<div class="main">
+    <h2>Week 2 Notes</h2> 
+    <div class="section">
+        <h2>Part 1: Programming Basics</h2> 
+            <p>Reserved Words: Cannot be Variable Names</p>
+            <p>abstract, await, boolean, break, byte, case, catch, char, class, const, continue, debugger, 
+                default, delete, do, double, else, enum, export, extends, false, final, 
+                finally, float, for, function, goto, if, implements, import, in instanceof, int, interface, let, long, native, 
+                new, null, package, private, protected, public, return, short, static, super, switch, synchronized, this,
+                throw, throws, transient, true, try, typeof, var, volatile, void, while, with, yiel 
+            </p>
+            <p>Primitive Data types: String, Symbol, Number, Boolean, Undefined, Null</p>
+            <p>If not a primitive data type then it is an object</p>
+            <p>Operand is a value </p>
+            <p>Operator applies operation to value</p>
+            <p>Variables = a value stored in memory, they have to be declared in order to be used</p>
+            <p>const = declares variable that will not be changed, let = declares a varible that can be</p>
+            <p>blocks define local scope</p>
+            <p>Camel case = MyFirstValue</p>
+            <p>Underscore = my_first_value</p>
+            <p>parseInt() convert string to whole number value, parseFloat() converts string to decimal numbers</p>
+            <p>null means no value</p>
+            <p>undefined = variable not assigned a value</p>
+            <p>Boolean = True or False</p>
+            <p>falsy values:"",'',0,-0,NaN,False,null,undefined</p>
+            <p>&& AND, || OR, ! NOT</p>
+            <p>Camel case = MyFirstValue</p>
+    </div>
+    <div class="section">
+        <h2>Part 2: Arrays, Logic, and Loops</h2> 
+            <p>array is an ordered list of values</p>
+            <p>define array by []</p>
+            <p>add values to an array by:</p>
+            <p>pets[0] = dog; pets[1] = fish; pets[3] = cat;</p>
+            <p>pets; ['dog', 'fish', 'undefined', 'cat']</p>
+            <p>Remove Value = delete pet[1] (this will delete fish from array)</p>
+            <p>pets.length; gives how many are in the array</p>
+            <p>avengers[avengers.length - 1]; gives you last item in array</p>
+            <p>pop() = remove the last item from an array</p>
+            <p>shift() = removes first item in array</p>
+            <p>push() = appends to end of array</p>
+            <p>unshift() appends to beginning of array</p>
+            <p>concat() merges arrays</p>
+            <p>join() = turn array into string and turns commas into what is in the () like in pet.join('&')</p>
+            <p>slice() = cut out a chunk of array like pets.slice(1,2)</p>
+            <p>splice() = cuts out chunk and replaces it with new like pets.splice(position, how many items, 'new item')</p>
+            <p>set is contains only unique values</p>
+            <p>list.add(1); list.add(2).add(3).add(4);</p>
+            <p>const words = new Set().add('the').add('quick').add('brown').add('fox')</p>
+            <p>number of values in a set can be found using the size()</p>
+            <p>has() method can be used to check if a value is in a set</p>
+            <p>delete() = remove; clear() = empty</p>
+            <p>if statements = code inside the block will only run if the condition in parentheses is true</p>
+            <p>else statements = add alternative if false</p>
+            <p>short way of writing if ... else statement is to use the ternary operator, ?</p>
+            <p>while (condition) {
+                // do something
+                }</p>
+            <p>condition in a while loop will be met at some point, otherwise your code will get stuck in an infinite loop</p>
+            <p>do {
+                do something
+            } while(condition)</p>
+            <p>for (initialization ; condition ; after) { do something }</p>
+            <p>short way of writing if ... else statement is to use the ternary operator, ?</p>
+            <p>short way of writing if ... else statement is to use the ternary operator, ?</p>
+            <p>short way of writing if ... else statement is to use the ternary operator, ?</p>
+            <p>short way of writing if ... else statement is to use the ternary operator, ?</p>
+
+    </div>
+    <div class="section">
+        <h2>Part 3: Functions</h2> 
+            <p>define a function literal we can use a function declaration</p>
+            <p>function hello(){
+                console.log('Hello World!');
+            }</p>
+            <p>you can also assign a function to a variable</p>
+            <p>All functions return a value, which can be specified using the return statement</p>
+            <p>function hola(){
+                return 'Howdy World!';
+            }</p>
+            <p>const message = hola();</p>
+            <p>Every function has a special variable called arguments</p>
+            <p>arguments are not an array</p>
+            <p>arrow functions can be identified by the 'arrow' symbol, => that gives them their name</p>
+            <p>const square = x => x*x;</p>
+            <p>const hola = () => alert('Hello World!');</p>
+            <p>// function is invoked at the start of the code
+                        hoist();
+            
+            // ...
+            // ... lots more code here
+            // ...
+            
+            // function definition is at the end of the code
+            function hoist(){
+                console.log('Hoist Me!');
+            }</p>
+            <p>var variables cannot be hoisted</p>
+            <p>The callback is provided as a parameter, then invoked inside the body of the function.</p>
+            <p>forEach() = for loop could be used to loop through each value in an array</p>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
