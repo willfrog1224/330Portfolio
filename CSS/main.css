@@ -54,3 +54,12 @@
   li a:hover {
     color: #92bb82;
   }
+  #result_display{
+    background-color: #92bb82;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 5px;    
+  }
