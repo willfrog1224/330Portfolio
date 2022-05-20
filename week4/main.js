@@ -1,10 +1,10 @@
 const quiz = [
-  { name: "Superman",realName: "Clark Kent" },
-  { name: "Wonderwoman",realName: "Dianna Prince" },
-  { name: "Batman",realName: "Bruce Wayne" },
-  { name: "The Hulk",realName: "Bruce Banner" },
-  { name: "Spider-man",realName: "Peter Parker" },
-  { name: "Cyclops",realName: "Scott Summers" }
+  { name: "sky",realName: "blue" },
+  { name: "grass",realName: "green" },
+  { name: "dirt",realName: "brown" },
+  { name: "snow",realName: "white" },
+  { name: "bubblegum",realName: "pink" },
+  { name: "bear",realName: "black" }
 ];
 
 // Utility functions
@@ -87,7 +87,7 @@ shuffle(this.questions);
 this.question = this.questions.pop();
 const options = [this.questions[0].realName, this.questions[1].realName, this.question.realName];
 shuffle(options);
-const question = `What is ${this.question.name}'s real name?`;
+const question = `What color is the ${this.question.name}?`;
 view.render(view.question,question);
 view.render(view.response,view.buttons(options));
 }
