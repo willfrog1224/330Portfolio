@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+    background-color: rgb(111, 194, 111);
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+body{
+    background-color: rgb(238, 237, 234);
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    font-size: 14px;
+    font-size: 14px;
+    font-family: Monospace;
+}
+.todo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+.completed .todo-content {
+    text-decoration: line-through;
+}
+.add-todo-wrapper{
+    width: 100%;
+    display: flex;
+}
+#todoInput {
+    flex: 1;
+    padding: 5px;
+    background-color: rgba(255,255,255,1);
+}
+#addBtn {
+    padding: 5px 15px;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0.3);
+    font-size: x-large;
+}
+#addBtn:hover{
+    background-color: rgba(45, 109, 126, 0.3);
+}
+#todo{
+    display: flex;
+}
+.todo-delete-btn {
+    margin-left: auto;
+    background-color: rgb(165, 46, 46);
+    font-family: Monospace;
+}
+.todo-delete-btn:hover {
+    background-color: rgb(109, 32, 48);
+}
+.complete-btn {
+    padding: 10px;
+}
+
+.todo-content{
+    padding-left: 10px;
+}
+.todo-filters{
+    padding-bottom: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgba(0,0,0,0.3);
+    font-family: Monospace;
+}
+.navbar a:hover{
+    color: rgb(111, 194, 111);
+}
+#allfilter, #activefilter, #completedfilter{
+    font-family: Monospace;
+}

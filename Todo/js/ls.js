@@ -11,7 +11,7 @@ function getTodoList() {
     return todoList;
 }
 
-function saveTodo() {
+function saveTodo(todo) {
     let todoList = getTodoList();
     todoList.push(todo);
     localStorage.setItem(TODO_LIST, JSON.stringify(todoList))
