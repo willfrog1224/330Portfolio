@@ -4,27 +4,36 @@
 <title>Todo App</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../CSS/main.css">
+<link rel="stylesheet" href="main.css">
+<script type="module" src='js/main.js'></script>
 </head>
 <body>
-
-<div class="header">
-    <h1>WDD 330 Portfolio</h1>  
-</div>
-
 <div class="navbar">
     <a href="../index.html">Home</a>
 </div>
-<script src='main.js'></script>
-<div class="main">
-    <h2>Todo App</h2> 
-    <p>To come...</p>
-    <p></p>
-    <p></p>
+<div class="container">
+    <h1>Todos</h1>
 
-    
+    <div class="todos-wrapper">
+        <div id="todos">
+
+        </div>
+        <div class="todo-filters">
+            <button id="allfilter">All</button>
+            <button id="activefilter">Active</button>
+            <button id="completedfilter">Complete</button>
+            
+        </div>
+    </div>
+    <div class="add-todo-wrapper">
+        <input id="todoInput" type="text">
+        <button id="addBtn">+</button>
+    </div>
+
+
+
+
 
 </div>
-
 </body>
 </html>
