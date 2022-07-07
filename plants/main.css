@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Monospace;
+    margin: 0;
+    background-color: #e2dcb6;
+}
+
+.drop {
+    background-image: url("images/pot.png");
+    background-repeat: no-repeat;
+    background-color: #e2dcb6;
+    color: #36453B;    
+    padding: 100px 0px;    
+    margin: 350px 0px 0px 550px;
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-position: center;
+    background-size: 250px;
+  }
+  
+  .drop:hover, .dropbtn:focus {
+    opacity: .50;
+    
+  }
+  
+  .menu {
+    position: relative;
+    display: inline-block;
+    text-align: center; 
+  }
+  
+  .drop_select {
+    display: none;
+    position: absolute;
+    background-image: url("images/Untitled-4.png");
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin: -680px 0px 0px 795px;   
+    z-index: 1;
+  }
+  
+  .drop_select a {
+    color: #36453B;
+    padding: 50px 75px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu a:hover {
+    
+    background-image: url("images/flower.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.display {
+    display: block;
+}
+
+.header {
+    padding: 25px;
+    text-align: center;
+    background: #A3B67C;
+    color: white;
+    font-size: x-large;
+}
+
+.navbar {
+    display: flex;
+    background-color: #CC968E;
+    font-size: x-large;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #36453B;
+    color: #CC968E;
+}
+form {
+    border-style: solid;
+    border-width: 75px;
+    border-color: #e2dcb6;
+    padding: 150px;
+    font-size: xx-large;
+    max-width: 64em;
+    margin: auto;
+    text-align: center;
+    background-color: #36453B;
+ }
+ .logo_main{
+    padding: 10px;
+ }
