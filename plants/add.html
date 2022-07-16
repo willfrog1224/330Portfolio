@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
+<script type="module" src='main.js'></script>
 </head>
 <body>
 
@@ -20,14 +21,14 @@
     <a href="detail.html">Plants</a>
     <a href="add.html">Add Plant</a>
 </div>
-<script src='main.js'></script>
+
 <div class="main">
 <form class="form" action="">
     <label for="pltype">Plant Type:</label><br>
     <input type="text" id="pltype" value=""><br><br>
-    <label for="nickname">Nickname:</label><br>
-    <input type="text" id="nickname" value=""><br><br>
-    <input type="submit" value="Submit">
+    <button id="add">+</button>
+
+    <div id="plant"></div>
 </form> 
 </div>
 

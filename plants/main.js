@@ -1,41 +1,66 @@
-const fs = require("fs");
+import other from './other.js';
 
 
+document.querySelector("#add").onclick = addNewPlant;
 
-function jsonReader(filePath, cb) {
-  fs.readFile(filePath, (err, fileData) => {
-    if (err) {
-      return cb && cb(err);
-    }
-    try {
-      const object = JSON.parse(fileData);
-      return cb && cb(null, object);
-    } catch (err) {
-      return cb && cb(err);
-    }
-  });
+const input = document.querySelector("#pltype");
+
+input.addEventListener('keypress', e => {
+    if (e.keyCode == '13') addNewPlant();
+})
+
+loadPlant();
+
+function addNewPlant(e) {
+    const plant = { id: Date.now(), content: input.value, completed: false };
+    input.value = "";
+    const plantID = createPlant(plant);
+    other.savePlant(plant);
+    loadPlant();
+
 }
-jsonReader("./plants.json", (err, customer) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-  console.log(customer.address);
-});
+function createPlant(plant) {
+    const plantDiv = document.createElement('div');
+    plantDiv.classList.add('plant');
 
-function drop() {
-  document.getElementById("options").classList.toggle("display");
+    const completeBtn = document.createElement('button');
+    completeBtn.setAttribute('data-id', plant.id);
+    completeBtn.classList.add('complete-btn');
+
+    const plantContent = document.createElement('div')
+    plantContent.innerText = plant.content;
+    plantContent.classList.add('plant-content');
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.setAttribute('data-id', plant.id);
+    deleteBtn.classList.add('plant-delete-btn');
+    deleteBtn.innerText = "Delete";
+    deleteBtn.onclick = deletePlant;
+
+    plantDiv.appendChild(completeBtn);
+    plantDiv.appendChild(plantContent);
+    plantDiv.appendChild(deleteBtn);
+
+    return plantDiv;
+
+}
+function addPlant(plantDiv) {
+    document.querySelector('#plant').appendChild(plantDiv);
+}
+function loadPlant() {
+    document.querySelector('#plant').innerHTML = '';
+    const plants = other.getPlant();
+    
+    plants.forEach(plant => {
+        const el = createPlant(plant)
+        addPlant(el);
+    })
+}
+function deletePlant(e) {
+    const btn = e.currentTarget;
+    other.deletePlant(btn.getAttribute('data-id'));
+    document.querySelector('#plant').innerHTML = ' ';
+    loadPlant();
+
 }
 
-window.onclick = function(event) {
-  if (!event.target.matches('.display')) {
-    var drops = document.getElementsByClassName("drop_select");
-    var i;
-    for (i = 0; i < drops.length; i++) {
-      var open = drops[i];
-      if (open.classList.contains('display')) {
-        open.classList.remove('display');
-      }
-    }
-  }
-}

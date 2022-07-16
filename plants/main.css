@@ -49,7 +49,7 @@ body {
     color: #36453B;
     padding: 50px 75px;
     text-decoration: none;
-    display: block;
+    display: block;  
   }
   
   .menu a:hover {
@@ -102,3 +102,11 @@ form {
  .logo_main{
     padding: 10px;
  }
+ @media only screen and (max-width: 600px) {
+  .drop{
+    margin-left: 250px;
+  }
+  .drop_select{
+    margin-left: 350px;
+  }
+}
