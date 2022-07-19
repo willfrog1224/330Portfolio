@@ -8,6 +8,6 @@
     "name":"Fiddle Fig",
     "water":"4",
     "light":"Med Light",
-    "image": "images/flower.png"
+    "image": "./images/flower.png"
 }
 ]
