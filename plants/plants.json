@@ -1,5 +1,11 @@
-{
+[{
     "name":"Monstera",
     "water":"1",
     "light":"bright"
+},
+{
+    "name":"Fiddle Fig",
+    "water":"4",
+    "light":"Med Light"
 }
+]
