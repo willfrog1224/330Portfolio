@@ -1,11 +1,13 @@
 [{
     "name":"Monstera",
     "water":"1",
-    "light":"bright"
+    "light":"bright",
+    "image": "images/flower.png"
 },
 {
     "name":"Fiddle Fig",
     "water":"4",
-    "light":"Med Light"
+    "light":"Med Light",
+    "image": "images/flower.png"
 }
 ]

@@ -24,7 +24,6 @@ async function loadPlants() {
     const plants = await response.json();
     console.log(plants); 
     loadPlant(plants)
-    
   }
   
 loadPlants()
@@ -32,23 +31,21 @@ function createPlant(plant) {
     const plantDiv = document.createElement('div');
     plantDiv.classList.add('plant');
 
-    const completeBtn = document.createElement('button');
+
    // completeBtn.setAttribute('data-id', plant.id);
-    completeBtn.classList.add('complete-btn');
+
 
     const plantContent = document.createElement('div')
     plantContent.innerText = plant.name;
     plantContent.classList.add('plant-content');
 
-    const deleteBtn = document.createElement('button');
-   // deleteBtn.setAttribute('data-id', plant.id);
-    deleteBtn.classList.add('plant-delete-btn');
-    deleteBtn.innerText = "Delete";
+  const picutre = document.createElement('img')
+  picutre.src = plant.image
   //  deleteBtn.onclick = deletePlant;
 
     plantDiv.appendChild(completeBtn);
     plantDiv.appendChild(plantContent);
-    plantDiv.appendChild(deleteBtn);
+
 
     return plantDiv;
 
@@ -57,19 +54,39 @@ function createPlant(plant) {
   //  document.querySelector('#plant').appendChild(plantDiv);
 //}
 function loadPlant(array) {
-    let final_plant = document.querySelector('#plant').innerHTML = '';
+    let final_plant = document.querySelector('#plant');
    // const plants = other.getPlant();
     
     array.forEach(plant => {
         const el = createPlant(plant)
-        final_plant.appendChild(el)
+        console.log(el)
+       final_plant.append(el)
     })
 }
-function deletePlant(e) {
-    const btn = e.currentTarget;
-    other.deletePlant(btn.getAttribute('data-id'));
-    document.querySelector('#plant').innerHTML = ' ';
-    loadPlant();
 
-}
+// function populateDropdown() {
+
+//   let plantType = [
+//     "Monstera", "Fiddle Fig"
+//   ]
+
+//   let dropdown = document.getElementById('plant-dropdown');
+//   dropdown.length = 0;
+  
+//   let defaultOption = document.createElement('option');
+//   defaultOption.text = 'Choose Plant';
+  
+//   dropdown.add(defaultOption);
+//   dropdown.selectedIndex = 0;
+  
+//   let option;
+    
+//   for (let i = 0; i < plantType.length; i++) {
+//           option = document.createElement('option');
+//       	  option.text = plantType[i];
+//       	  option.value = plantType[i];
+//       	  dropdown.add(option);
+//   }
+
+// }
 
