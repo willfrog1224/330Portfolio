@@ -43,8 +43,8 @@ function createPlant(plant) {
   picutre.src = plant.image
   //  deleteBtn.onclick = deletePlant;
 
-    plantDiv.appendChild(completeBtn);
-    plantDiv.appendChild(plantContent);
+  plantDiv.appendChild(plantContent);
+  plantDiv.appendChild(picutre);
 
 
     return plantDiv;
