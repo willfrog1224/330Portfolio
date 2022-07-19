@@ -5,7 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
-<script type="module" src='main.js'></script>
+<script type="module" defer src='main.js'></script>
+<script>
+    function search_plant() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('plant-content');
+  let y = document.getElementsByClassName('plant')
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          y[i].style.display="none";
+      }
+      else {
+          [i].style.display="list-item";                 
+      }
+  }
+}
+
+</script>
 </head>
 <body>
 <div id="plant">
@@ -22,8 +40,7 @@
 </div>
 
 <div class="main"> 
-    <input id="searchbar" onkeyup= "search_plant()" type="text"
-    name="search" placeholder="Search plants..">
+    <input id="searchbar" onkeyup= "search_plant()" type="text" name="search" placeholder="Search plants..">
 
 
 

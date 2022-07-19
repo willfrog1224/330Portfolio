@@ -9,5 +9,29 @@
     "water":"4",
     "light":"Med Light",
     "image": "./images/flower.png"
+},
+{
+    "name":"Heart Leaf",
+    "water":"4",
+    "light":"Med Light",
+    "image": "./images/flower.png"
+},
+{
+    "name":"Turtle",
+    "water":"4",
+    "light":"Med Light",
+    "image": "./images/flower.png"
+},
+{
+    "name":"Hoya Princess",
+    "water":"4",
+    "light":"Bright",
+    "image": "./images/flower.png"
+},
+{
+    "name":"ZZ",
+    "water":"4",
+    "light":"Low Light",
+    "image": "./images/flower.png"
 }
 ]
