@@ -34,17 +34,21 @@ function createPlant(plant) {
 
    // completeBtn.setAttribute('data-id', plant.id);
 
-
+    const picutre = document.createElement('img')
+    picutre.src = plant.image
     const plantContent = document.createElement('div')
     plantContent.innerText = plant.name;
     plantContent.classList.add('plant-content');
+    const water = document.createElement('p')
+    water.innerText = plant.water;
+    const light = document.createElement('p')
+    light.innerText = plant.light;
 
-  const picutre = document.createElement('img')
-  picutre.src = plant.image
   //  deleteBtn.onclick = deletePlant;
-
-  plantDiv.appendChild(plantContent);
   plantDiv.appendChild(picutre);
+  plantDiv.appendChild(plantContent);
+  plantDiv.appendChild(water);
+  plantDiv.appendChild(light);
 
 
     return plantDiv;
@@ -63,6 +67,23 @@ function loadPlant(array) {
        final_plant.append(el)
     })
 }
+
+function search_plant() {
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase();
+  let x = document.getElementsByClassName('plant-content');
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+      }
+      else {
+          x[i].style.display="list-item";                 
+      }
+  }
+}
+
+
 
 // function populateDropdown() {
 
