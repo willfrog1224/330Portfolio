@@ -26,7 +26,7 @@ async function loadPlants() {
     loadPlant(plants)
   }
   
-loadPlants()
+
 function createPlant(plant) {
     const plantDiv = document.createElement('div');
     plantDiv.classList.add('plant');
@@ -83,7 +83,7 @@ function search_plant() {
   }
 }
 
-
+loadPlants()
 
 // function populateDropdown() {
 
