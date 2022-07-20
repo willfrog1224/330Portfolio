@@ -2,36 +2,36 @@
     "name":"Monstera",
     "water":"1",
     "light":"bright",
-    "image": "images/flower.png"
+    "image": "images/monstera.png"
 },
 {
     "name":"Fiddle Fig",
     "water":"4",
     "light":"Med Light",
-    "image": "./images/flower.png"
+    "image": "./images/fiddle.png"
 },
 {
     "name":"Heart Leaf",
     "water":"4",
     "light":"Med Light",
-    "image": "./images/flower.png"
+    "image": "./images/heart.png"
 },
 {
     "name":"Turtle",
     "water":"4",
     "light":"Med Light",
-    "image": "./images/flower.png"
+    "image": "./images/turtle.png"
 },
 {
     "name":"Hoya Princess",
     "water":"4",
     "light":"Bright",
-    "image": "./images/flower.png"
+    "image": "./images/hoya.png"
 },
 {
     "name":"ZZ",
     "water":"4",
     "light":"Low Light",
-    "image": "./images/flower.png"
+    "image": "./images/zz.png"
 }
 ]
