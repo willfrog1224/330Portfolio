@@ -116,7 +116,7 @@
     border: 2px solid black;
   }
   #searchbar{
-    margin-left: 15%;
+    margin-left: 50px;
     padding:15px;
     border-radius: 10px;
   }
@@ -130,3 +130,12 @@
   input[type=text]:focus {
     width: 70%;
   }
+  .plant-name {
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start;  
+    align-items: center;
+  }
+.plant-name img {
+  width: 50%;
+}

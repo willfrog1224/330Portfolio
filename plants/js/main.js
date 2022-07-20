@@ -8,7 +8,7 @@ async function loadPlants() {
 
 function createPlant(plant) {
     const plantDiv = document.createElement('div');
-    plantDiv.classList.add('plant');
+    plantDiv.classList.add('plant-name');
     const picutre = document.createElement('img')
     picutre.src = plant.image
     const plantContent = document.createElement('div')
