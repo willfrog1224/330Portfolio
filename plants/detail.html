@@ -11,7 +11,7 @@
   let input = document.getElementById('searchbar').value
   input=input.toLowerCase();
   let x = document.getElementsByClassName('plant-content');
-  let y = document.getElementsByClassName('plant')
+  let y = document.getElementsByClassName('plant-name')
     
   for (i = 0; i < x.length; i++) { 
       if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -34,14 +34,13 @@
 <div class="navbar">
     <a href="../index.html">Portfolio</a>
     <a href="index.html">Home</a>
-    <a href="detail.html">Plants</a>
-    <a href="add.html">Add Plant</a>
+    <a href="detail.html">Plants</a>    
 </div>
 
 <div class="main"> 
     <input id="searchbar" onkeyup= "search_plant()" type="text" name="search" placeholder="Search plants..">
-
-
+   
+    <a href="detail.html" class="reload">Reload Plants</a>
 
  
     <div id="plant"></div>

@@ -1,36 +1,36 @@
 [{
     "name":"Monstera",
-    "water":"1",
-    "light":"bright",
+    "water":"1 Day A Week",
+    "light":"Bright",
     "image": "images/monstera.png"
 },
 {
     "name":"Fiddle Fig",
-    "water":"4",
+    "water":"4 Day A Week",
     "light":"Med Light",
     "image": "./images/fiddle.png"
 },
 {
     "name":"Heart Leaf",
-    "water":"4",
+    "water":"4 Day A Week",
     "light":"Med Light",
     "image": "./images/heart.png"
 },
 {
     "name":"Turtle",
-    "water":"4",
+    "water":"4 Day A Week",
     "light":"Med Light",
     "image": "./images/turtle.png"
 },
 {
     "name":"Hoya Princess",
-    "water":"4",
+    "water":"4 Day A Week",
     "light":"Bright",
     "image": "./images/hoya.png"
 },
 {
     "name":"ZZ",
-    "water":"4",
+    "water":"4 Day A Week",
     "light":"Low Light",
     "image": "./images/zz.png"
 }
