@@ -15,8 +15,10 @@ function createPlant(plant) {
     plantContent.innerText = plant.name;
     plantContent.classList.add('plant-content');
     const water = document.createElement('p')
+    water.classList.add('water');
     water.innerText = plant.water;
     const light = document.createElement('p')
+    light.classList.add('light');
     light.innerText = plant.light;
 
   plantDiv.appendChild(picutre);

@@ -13,13 +13,13 @@ body {
     background-repeat: no-repeat;
     background-color: #e2dcb6;
     color: #36453B;    
-    padding: 100px 0px;    
+    padding: 20%;    
     margin: 350px 0px 0px 550px;
     width: 100%;
     font-size: 25px;
     border: none;
-    background-position: center;
-    background-size: 250px;
+    background-position: 50%;
+    background-size: 50%;
   }
   
   .drop:hover, .dropbtn:focus {
@@ -37,11 +37,11 @@ body {
     display: none;
     position: absolute;
     background-image: url("images/Untitled-4.png");
-    background-position: 50% 50%;
-    background-size: 100%;
+    background-position: 50%;
+    background-size: 80%;
     background-repeat: no-repeat;
     overflow: auto;
-    margin: -680px 0px 0px 795px;   
+    margin: -650px 0px 0px 795px;   
     z-index: 1;
   }
   
@@ -111,8 +111,7 @@ input[type=text]:focus {
 }
 .plant-name {
   display: flex;
-  flex-direction: row;  
-   
+  flex-direction: row;     
   flex-wrap: wrap;
   align-items: center;
   margin-left: 50px;
@@ -141,12 +140,51 @@ a {
 }
 
 
+.light {
+  border-radius: 50%;
+  color:#36453B; 
+  font-size: 15px;
+  padding: 50px;
+  text-align: center;
+  
+}
+@keyframes glowing {
+  0% {
+    background-color: #dddd1c;
+    box-shadow: 0 0 5px #dddd1c;
+  }
+  50% {
+    background-color: #e3e34f;
+    box-shadow: 0 0 20px #e3e34f;
+  }
+  100% {
+    background-color: #dcc814;
+    box-shadow: 0 0 5px #dcc814;
+  }
+}
+.light {
+  animation: glowing 1300ms infinite;
+}
+
+.water{ 
+  border: solid #89c7b7;
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 2px 2px 2px #96a8aa;
+  border-radius: 0% 100% 100% 100%;
+  background: #91c4cb;
+  text-align: center; 
+  padding-top: 30px; 
+  font-size: 15px;
+  }
+
 
  @media only screen and (max-width: 600px) {
   .drop{
-    margin-left: 250px;
+    margin-left: 125px;
   }
   .drop_select{
-    margin-left: 350px;
+    margin-left: 153px;
+    margin-top: -473px;
   }
 }

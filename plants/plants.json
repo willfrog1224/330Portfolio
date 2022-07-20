@@ -12,13 +12,13 @@
 },
 {
     "name":"Heart Leaf",
-    "water":"4 Day A Week",
+    "water":"3 Day A Week",
     "light":"Med Light",
     "image": "./images/heart.png"
 },
 {
     "name":"Turtle",
-    "water":"4 Day A Week",
+    "water":"1 Day A Week",
     "light":"Med Light",
     "image": "./images/turtle.png"
 },
@@ -30,7 +30,7 @@
 },
 {
     "name":"ZZ",
-    "water":"4 Day A Week",
+    "water":"2 Day A Week",
     "light":"Low Light",
     "image": "./images/zz.png"
 }
